@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(4,29,29);
+}
+.container{
+    width: 360px;
+    padding: 33px;
+    margin-left: 33%;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+input{
+    width: 270px;
+    padding: 8px;
+    border: 2px solid rgb(6,145,145);
+    outline: none;
+}
+button{
+    width: 60px;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 19px;
+    border: none;
+    cursor: none;
+    outline: none;
+    background-color: rgb(4,29,29);
+    color: white;
+    justify-items: right;
+}
+.work-list{
+    position: relative;
+}
+.work-list task value{
+    width: 270px;
+    background-color: rgb(4,29,29);
+}
