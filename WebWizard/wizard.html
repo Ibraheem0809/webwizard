@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy file</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(13, 13, 63);
+        }
+        nav .left{
+            font-size: 2rem;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.2rem;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        nav ul li a:hover{
+            color: rgb(136, 136, 235);
+            font-size: 1.3rem;
+        }
+        main .kaizen{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+        main .kaizen span{
+            font-size: 2.5rem;
+            color: rgb(117, 58, 173);
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .firstLeft span{
+            color: rgb(203, 175, 230);
+        }
+        .firstSection .firstLeft{
+            position: relative;
+            height: 150px;
+            width: 470px; 
+            font-size: 1.5rem;
+            border: none;
+            overflow: hidden;
+        }
+        .firstSection .firstLeft .content{
+            background-color: rgb(0,0,33);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: -100%;
+            left: 0;
+        }
+        .firstLeft:hover .content{
+            top: 0;
+            transition: all 0.5s;
+        }
+        .firstSection .firstRight img{
+            height: 350px;
+            width: 300px;
+            border-radius: 160px;
+            box-shadow: 10px 10px 3px black;
+        }
+        hr{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .secondSection{
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .secondSection .details{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            font-size: 1rem;
+            border: none;
+            overflow: hidden;
+            box-shadow: 8px 8px 3px rgb(13, 13, 63);
+            border-radius: 20px;
+        }
+        .secondSection .details .image{
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            
+        }
+        .container{
+            background-color: rgba(0,0,0,0.8);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: -100%;
+            text-align: center;
+            padding-top: 70px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .details:hover .container{
+            left: 0;
+            transition: all 0.5s;
+        }
+        .thirdSection{
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .thirdSection  a{
+            color: lavender;
+            text-decoration: none;
+            margin-top: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .hiddenContent{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .hiddenContent h1{
+            color: rgb(203, 175, 230);
+            text-align: center;
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px 2px;
+        }
+        .hiddenContent h3{
+            color: rgb(203, 175, 230);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">SOS</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="kaizen">A product by <span>Kaizen 3</span></h1>
+        <section class="firstSection">
+            <div class="firstLeft">
+                <h1><span>SOS Sarthi</span></h1>
+                <br>
+                <p>A device installed in vehicles that automatically detects accidents and contacts to emergency services.</p>
+                <div class="content">
+                    <h3><span>Features of SOS Sarthi</span></h3>
+                    <br>
+                    <p> => Real time accident detection.</p>
+                    <p> => Automatic calling to emergency number.</p>
+                    <p> => Location Tracking to quick response.</p>
+                </div>
+            </div>
+            <div class="firstRight">
+                <img src="Amazon_com_ Personal Safety Alarm for Women - 130dB Self Defense Keychains Siren Whistle with Sos LED Strobe Light - Personal Emergency Security Safe Devices Key Chain Alarms for Kids Elderly _ Office Products.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+                <div class="details">
+                    <img class="image" src="anjali.jpg" alt="">
+                    <div class="container">
+                        <p>A passionate and enthusiastic learner having good command in C.</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <img class="image" src="zaqqu.jpg" alt="">
+                    <div class="container">
+                        <p>Member of Kaizen 3 as a hardware assembler having a strong foundation in Java.</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <img class="image" src="ibraheem.jpg" alt="">
+                    <div class="container">
+                        <p>Member of Kaizen 3 and a passionate frontend developer and basic idea of Javascript.</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <img class="image" src="shami.jpg" alt="">
+                    <div class="container">
+                        <p>Member of <span>Kaizen 3</span> having a strong foundation in HTML,CSS & Python.</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <img class="image" src="vaishnavi.jpg" alt="">
+                    <div class="container">
+                        <p>I'm passionate web designer having strong foundation in SQL.</p>
+                    </div>
+                </div>
+        </section>
+        <section class="thirdSection">
+            <a href="https://www.linkedin.com/in/anjali-yadav-478400342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Anjali Yadav</a>
+            <a href="https://www.linkedin.com/in/zaqwan-waseem-03b01b322/">Zaqwan Waseem</a>
+            <a href="https://www.linkedin.com/in/md-ibraheem-siddiqui-72224b326/">Md Ibraheem Siddiqui</a>
+            <a href="https://www.linkedin.com/in/shami-v-37195827a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Shami Verma</a>
+            <a href="https://www.linkedin.com/in/vaishnavi-gupta-83063a341/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Vaishnavi Gupta</a>
+        </section>
+    </main> 
+    <script src="copyWizard.js"></script>
+</body>
+</html>
